@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"speed_pid\startup_stm32f407xx.o"
+"speed_pid\main.o"
+"speed_pid\gpio.o"
+"speed_pid\can.o"
+"speed_pid\stm32f4xx_it.o"
+"speed_pid\stm32f4xx_hal_msp.o"
+"speed_pid\stm32f4xx_hal_can.o"
+"speed_pid\stm32f4xx_hal_rcc.o"
+"speed_pid\stm32f4xx_hal_rcc_ex.o"
+"speed_pid\stm32f4xx_hal_flash.o"
+"speed_pid\stm32f4xx_hal_flash_ex.o"
+"speed_pid\stm32f4xx_hal_flash_ramfunc.o"
+"speed_pid\stm32f4xx_hal_gpio.o"
+"speed_pid\stm32f4xx_hal_dma_ex.o"
+"speed_pid\stm32f4xx_hal_dma.o"
+"speed_pid\stm32f4xx_hal_pwr.o"
+"speed_pid\stm32f4xx_hal_pwr_ex.o"
+"speed_pid\stm32f4xx_hal_cortex.o"
+"speed_pid\stm32f4xx_hal.o"
+"speed_pid\stm32f4xx_hal_exti.o"
+"speed_pid\system_stm32f4xx.o"
+--strict --scatter "speed_pid\speed_pid.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "speed_pid.map" -o speed_pid\speed_pid.axf
